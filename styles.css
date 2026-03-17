@@ -1,0 +1,159 @@
+/* ===== 电脑版 ===== */
+@media screen and (min-width: 500px) {
+  body {
+    width: 800px;
+    margin: 0 auto;           
+    font-family: 'Gill Sans', sans-serif;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #point {
+    order: 1;
+    text-align: left;
+  }
+  
+  #date {
+    order: 2;
+    text-align: right;
+  }
+  
+  #version {
+    order: 3;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  
+  .mobile {
+    display: none;
+  }
+}
+
+/* ===== 手机版 ===== */
+@media screen and (max-width: 499px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;   
+  padding-right: -10px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+    padding-bottom: 100px;
+  }
+  
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #point, #date, #version {
+    width: 100%;
+    text-align: center;
+    margin: 2px 0;
+  }
+  
+  #version {
+    font-size: 15px;
+  }
+  
+  /* 菜单  */
+  .mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightyellow;
+    z-index: 1000;
+    padding: 10px 0;}
+ .mobile ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0 15px;
+  }
+  
+  .mobile a {
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 6px;
+    display: inline-block;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  
+
+ 
+}
+
+/* ===== shared ===== */
+ol, ul {
+  padding-left: 20px;
+}
+ul{list-style-type: disc;}
+.sec{list-style-type: square;}
+.head {
+  font-weight: bold;
+}
+
+#sublist {
+  list-style-type: disc;
+}
+
+#list2 {
+  list-style-type: square;
+}
+
+#lastable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+#lastable td,
+#lastable th {
+  border: 1px solid black;
+}
+
+.data ul {
+  list-style-type: disc;
+}
+
+
+div {
+  font-family: Consolas, Monaco, 'Courier New';
+  font-weight: bold;
+  overflow-x: auto;     
+  white-space: pre;        
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+header h1 ~ * {
+  font-size: 20px;
+}
+
+#blue {
+  background-color: lightcyan;  
+}
